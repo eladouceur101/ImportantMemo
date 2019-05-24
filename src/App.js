@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Grid, {
+  Title,
+  ImgArea,
+  SideText,
+  BQuote,
+  Footer,
+  FootText
+} from './appStyles';
+import Map from './img/map.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grid>
+      <Title>Important Memo!!</Title>
+      <SideText>It was going to be a lonely trip back.</SideText>
+      <BQuote>
+        Now the real medical miracle is pooping at poo poo point. Making the
+        hike while holding it in. Then pee in pee pee creek
+        <br />
+        <br />
+        ~Brandon Hart~
+        <br />
+        2019
+      </BQuote>
+      <ImgArea src={Map} alt="Important Map" />
+      <Footer>
+        <FootText>Made with Sarcasm and Love, Tex</FootText>
+      </Footer>
+    </Grid>
   );
 }
 
